@@ -14,7 +14,7 @@ public class Printer {
 
     public String print(int pages, int copies) {
         int usedPages = pages * copies;
-        if(this.loadedPaper >= usedPages){
+        if(this.loadedPaper >= usedPages && this.tonerVolume >= usedPages){
             this.loadedPaper -= usedPages;
             this.tonerVolume -= usedPages;
             return "Successfully printed";
