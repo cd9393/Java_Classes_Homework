@@ -33,9 +33,9 @@ public class CalculatorTest {
 
     @Test
     public void canDivide(){
-        double number1 = 8.0;
+        double number1 = 9.0;
         double number2 = 2.0;
-        assertEquals(4.0, calculator.divide(number1, number2), 0.01);
+        assertEquals(4.5, calculator.divide(number1, number2), 0.01);
     }
 
 }
